@@ -46,12 +46,6 @@ Model tụt nhiều nhất là **BoW + MLP**: từ F1 0.974 trên SUB xuống 0.
 
 SEED = 5165, 5165 % 6 = 5, nên đề của em là **đề #6 (LLM · trả JSON)**.
 
-Cách làm: sửa prompt để LLM trả về `{"label": ..., "reason": ...}`, viết hàm `parse_json_label`, chạy trên 10 tin SUB, so token và chi phí với bản trả về 1 từ.
-
-Kết quả: *(điền số thật từ notebook sau khi chạy cell)*
-
-Giải thích: *(điền sau khi có kết quả)*
-
 ## 6. Phương án cho sản phẩm thật
 
 Yêu cầu: 10 triệu SMS/ngày (khoảng 116 tin/giây), p95 dưới 50 ms cho mỗi tin.
